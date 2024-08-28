@@ -1,0 +1,152 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title[Joint lab meeting]{Hands-on using NEMO: Simple batch job submission on BW-HPCs}
+\author{Sina and Marieke}
+\institute{}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
+
+\section{Background}
+
+\begin{frame}{BW HPC Clusters}
+
+\begin{itemize}
+  \item BW-Cluster
+  \item Nemo
+\end{itemize}
+
+\vskip 1cm
+
+\begin{block}{Why Nemo?}
+More ressources.
+\end{block}
+
+\end{frame}
+
+\section{Registration}
+
+
+\begin{frame}{Registration for NEMO}
+
+\begin{itemize}
+\item How to register?
+\end{itemize}
+
+
+\end{frame}
+
+\section{Login}
+
+
+\begin{frame}{Login to NEMO}
+
+
+\begin{itemize}
+    \item Access cluster from local shell: ssh fr\_mw1205@login1.nemo.uni-freiburg.de
+    \item https://wiki.bwhpc.de/e/Registration/2FA
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Login node: Environment}
+
+\begin{itemize}
+    \item 
+    \item Create and access conda workspace: ws\_allocate conda <days>   # e.g. 100, for 100 days
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{Login node: Data transfer}
+
+\begin{itemize}
+    \item Transfer local file to central cluster and back: scp
+    \item Scratch a whole folder from cluster: scp -r
+\end{itemize}
+
+\end{frame}
+
+\section{Job scripts}
+
+
+\begin{frame}{Batch job specification: Example}
+
+\begin{itemize}
+    \item 
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{Batch job specification: Header}
+
+\begin{itemize}
+    \item 
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{Batch job specification: Computation}
+
+\begin{itemize}
+    \item WORKDIR = direction/to/your/project
+    \item cd \$WORKDIR
+    \item load conda: ml devel/conda
+    \item activate your environment: conda activate your\_environment
+    \item run script: python3 your\_file.py
+    \item create environment from .yml file: conda env create -f environment.yml
+\end{itemize}
+
+
+\end{frame}
+
+\section{Job submissions}
+
+\begin{frame}{Batch job submission}
+
+
+\end{frame}
+
+\section{HPC cluster usage}
+
+\begin{frame}{Job handling}
+
+\begin{itemize}
+    \item # Show my active jobs: showq -u \$USER
+    \item # Cancel active jobs: scancel jobID
+\end{itemize}
+
+\end{frame}
+
+
+\end{document}
