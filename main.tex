@@ -21,8 +21,7 @@
 \usepackage{hyperref}
 
 \title[Joint lab meeting]{Hands-on using NEMO: Simple batch job submission on BW-HPCs}
-\author{Sina and Marieke}
-\institute{Joint Lab meeting}
+\author{Sina and Marieke at Joint Lab meeting}
 \date{\today}
 
 \begin{document}
@@ -83,12 +82,11 @@ Login with your Uni-Account to https://login.bwidm.de/
     
 \end{enumerate}
 
+\vspace{2cm}
 
 \begin{columns}[onlytextwidth] 
   \begin{column}{0.5\textwidth}
-      You will need to register 2FA!  
-      
-      For example with OTP.
+      You will need to register 2 factor authentification, use for example OTP for generating one-time passowrds.
       \end{column}
     \hspace{0.02\textwidth} % add small horizontal space
     \begin{column}{0.5\textwidth}
@@ -111,7 +109,7 @@ Login with your Uni-Account to https://login.bwidm.de/
 
 \begin{itemize}
 
-\item \href{https://wiki.bwhpc.de/e/Registration/2FA}{Instructions on 2 factor authentification} 
+\item \href{https://wiki.bwhpc.de/e/Registration/2FA}{Instructions on 2FA} 
 
 \item \href{https://login.bwidm.de/}{For registering a new Token and setting a personalised password, see again: https://login.bwidm.de/}
 
@@ -254,6 +252,14 @@ See also : \href{https://wiki.bwhpc.de/e/NEMO/Moab}{https://wiki.bwhpc.de/e/NEMO
 
 \begin{frame}{Batch job submission on Helix}
 
+Hands on demonstration. For following the example, download shell script from: https://github.com/MWesselkamp/BW-HPC-Usage.
+
+
+\end{frame}
+
+
+\begin{frame}{Batch job submission on Helix}
+
 \begin{figure}
     \centering
     \includegraphics[width=0.85\linewidth]{examples/ScreenShots/S1.png}
@@ -290,6 +296,10 @@ After and during job execution, check output file for printed progress.
     \item # Cancel active jobs: \texttt{scancel jobID}
     \item # Monitor running job: \texttt{checkjob 12345}
 \end{itemize}
+
+\vspace{2cm}
+
+Download slides at: https://github.com/MWesselkamp/BW-HPC-Usage.
 
 \end{frame}
 
