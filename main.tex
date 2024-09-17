@@ -5,14 +5,14 @@
 % For more themes, color themes and font themes, see:
 % http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
 %
-\mode<presentation>
-{
-  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
-  \usecolortheme{default} % or try albatross, beaver, crane, ...
-  \usefonttheme{default}  % or try serif, structurebold, ...
-  \setbeamertemplate{navigation symbols}{}
-  \setbeamertemplate{caption}[numbered]
-} 
+%\mode<presentation>
+%{
+%  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+%  \usecolortheme{default} % or try albatross, beaver, crane, ...
+%  \usefonttheme{default}  % or try serif, structurebold, ...
+%  \setbeamertemplate{navigation symbols}{}
+%  \setbeamertemplate{caption}[numbered]
+%} 
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -22,7 +22,7 @@
 
 \title[Joint lab meeting]{Hands-on using NEMO: Simple batch job submission on BW-HPCs}
 \author{Sina and Marieke}
-\institute{}
+\institute{Joint Lab meeting}
 \date{\today}
 
 \begin{document}
@@ -30,11 +30,6 @@
 \begin{frame}
   \titlepage
 \end{frame}
-
-% Uncomment these lines for an automatically generated outline.
-%\begin{frame}{Outline}
-%  \tableofcontents
-%\end{frame}
 
 \section{Background}
 
@@ -45,10 +40,10 @@
   \begin{itemize}
       \item 24 GPU nodes
   \end{itemize}
-  \item \href{https://wiki.bwhpc.de/e/NEMO/Hardware#Compute\_and\_Special\_Purpose\_Nodes}{Nemo }:
+  \item \href{https://wiki.bwhpc.de/e/NEMO/Hardware#Compute\_and\_Special\_Purpose\_Nodes}{Nemo}
   \begin{itemize}
-      \item on \texttt{\$HOME} for permanent file storage: 100GB quota
-      \item limited lifetime storage with workspaces: 10TB quota 
+      \item on \$HOME (permanent storage): 100GB 
+      \item limited lifetime storage with workspaces: 10TB  
       \item One GPU node (nvidia)
   \end{itemize}
   \item Helix 
@@ -56,12 +51,6 @@
       \item > 50 GPUs (nvidia)
   \end{itemize}
 \end{itemize}
-
-\vskip 1cm
-
-%\begin{block}{Why Nemo?}
-%More ressources.
-%\end{block}
 
 \end{frame}
 
@@ -137,7 +126,7 @@ Login with your Uni-Account to https://login.bwidm.de/
 
 \begin{frame}{Login to NEMO}
 
-With a registered account \textbf{and from an eduroam network connection} you can access the HPC from your local shell with a secure shell client (SSH).
+With a registered account \textbf{and from an eduroam network connection} (\href{https://www.rz.uni-freiburg.de/en/services/netztel-en/vpn-1?set_language=en}{Download VPN client}) you can access the HPC from your local shell with a secure shell client (SSH).
 
 \begin{enumerate}
     \item Access cluster from your local shell: ssh fr\_mw1205@login1.nemo.uni-freiburg.de
@@ -174,7 +163,7 @@ Navigation after successful login to Nemo: See you home directory and existing f
 
 \end{frame}
 
-\begin{frame}{Login Node: Data Transfer}
+\begin{frame}{Login Node Data Transfer}
 
 \begin{itemize}
     \item Transfer a local file to the central cluster (and vice versa) using \texttt{scp} or \texttt{scp -r} from your local shell.
