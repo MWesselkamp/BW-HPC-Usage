@@ -1,0 +1,28 @@
+                     Research Cluster Baden Wuerttemberg
+                                 bwForCluster
+
+           ooooo      ooo oooooooooooo ooo        ooooo   .oooooo.
+           `888b.     `8' `888'     `8 `88.       .888'  d8P'  `Y8b
+            8 `88b.    8   888          888b     d'888  888      888
+            8   `88b.  8   888oooo8     8 Y88. .P  888  888      888
+            8     `88b.8   888    "     8  `888'   888  888      888
+            8       `888   888       o  8    Y     888  `88b    d88'
+           o8o        `8  o888ooooood8 o8o        o888o  `Y8bood8P'
+
+            Neuroscience   Elementary   Microsystems   Materials
+                               Particle     Engineering     Science
+                                   Physics
+
+--------------------------------------------------------------------------------
+ Node               : login1.nemo.uni-freiburg.de 
+ OS                 : CentOS 7.9 (Rev. 41), 3.10.0-1160.114.2
+--------------------------------------------------------------------------------
+ Login nodes        : login1.nemo.uni-freiburg.de login2.nemo.uni-freiburg.de
+ Visualization node : vis.nemo.uni-freiburg.de
+ Workflow node      : workflow.nemo.uni-freiburg.de (no 2FA, only ssh commands)
+--------------------------------------------------------------------------------
+ NEMO Status        : https://www.nemo.uni-freiburg.de/nemo/stat/
+ NEMO Support       : https://www.nemo.uni-freiburg.de/support/
+ NEMO News          : https://www.nemo.uni-freiburg.de/news/
+ Central Wiki       : https://wiki.bwhpc.de/e/NEMO
+

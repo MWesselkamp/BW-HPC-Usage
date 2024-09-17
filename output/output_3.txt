@@ -1,0 +1,5 @@
+
+[fr_mw1205@login1 ~]$ pwd
+/home/fr/fr_fr/fr_mw1205
+[fr_mw1205@login1 ~]$ ls
+Auto-PyTorch  bash  DomAdapt  miniconda.sh  physics_guided_nn  Spatially-varying-coefficent-model 

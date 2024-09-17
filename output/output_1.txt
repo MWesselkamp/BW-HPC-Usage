@@ -1,0 +1,6 @@
+Last login: Tue Sep 10 15:55:14 on ttys002
+(base) mw1205@phy-10-126-189-8 ~ % ssh fr_mw1205@login1.nemo.uni-freiburg.de
+You must create a one-time password for this node.
+Please visit: https://wiki.bwhpc.de/e/Registration/2FA
+(fr_mw1205@login1.nemo.uni-freiburg.de) Your OTP: 043940
+(fr_mw1205@login1.nemo.uni-freiburg.de) Password: 
